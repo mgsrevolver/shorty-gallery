@@ -1,19 +1,15 @@
-import { initializeApp } from 'firebase/app'
-import { getFirestore } from 'firebase/firestore'
-import { getStorage } from 'firebase/storage'
+import firebase from 'firebase/compat/app'
+import 'firebase/compat/firestore'
+import 'firebase/compat/storage'
 
-// Import the functions you need from the SDKs you need
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: 'AIzaSyAx5GqBSUdxKuNpAoDnJ1ebMjeam-PO4UI',
-  authDomain: 'shorty-gallery.firebaseapp.com',
-  projectId: 'shorty-gallery',
-  storageBucket: 'shorty-gallery.appspot.com',
-  messagingSenderId: '614086498790',
-  appId: '1:614086498790:web:829f34b61ec8932df1de27',
+var firebaseConfig = {
+  apiKey: 'AIzaSyDLmnoBvnjOQ-AaJgDw1DnVBiTETbcp8LI',
+  authDomain: 'the-net-ninja-sandbox.firebaseapp.com',
+  databaseURL: 'https://the-net-ninja-sandbox.firebaseio.com',
+  projectId: 'the-net-ninja-sandbox',
+  storageBucket: 'the-net-ninja-sandbox.appspot.com',
+  messagingSenderId: '485942827092',
+  appId: '1:485942827092:web:1811d9d8f1f5fabcd5b5c1',
 }
 
 // Initialize Firebase
