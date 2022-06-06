@@ -1,9 +1,8 @@
-import * as firebase from 'firebase/app'
-import 'firebase/storage'
-import 'firebase/firestore'
+import { initializeApp } from 'firebase/app'
+import { getFirestore } from 'firebase/firestore'
+import { getStorage } from 'firebase/storage'
 
 // Import the functions you need from the SDKs you need
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -18,10 +17,8 @@ const firebaseConfig = {
 }
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig)
-
-// Initialize storage
-const projectStorage = firebase.storage()
-const projectFirestore = firebase.firestore()
+initializeApp(firebaseConfig)
+const projectStorage = getStorage()
+const projectFirestore = getFirestore()
 
 export { projectStorage, projectFirestore }
